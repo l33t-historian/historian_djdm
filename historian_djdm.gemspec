@@ -4,7 +4,7 @@ DM_VERSION    = '~> 1.2.0'
 Gem::Specification.new do |s|
   s.name              = 'historian_djdm'
   s.summary           = 'Historian Version: DataMapper backend for delayed_job'
-  s.version           = '1.0.0'
+  s.version           = '1.0.1'
   s.authors           = 'Brandon Keepers'
   s.date              = Date.today.to_s
   s.email             = 'brandon@collectiveidea.com'
