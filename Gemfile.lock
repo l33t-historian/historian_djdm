@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    historian_djdm (1.0.0)
+    historian_djdm (1.0.1)
       delayed_job (~> 2.1)
       dm-aggregates (~> 1.2.0)
       dm-core (~> 1.2.0)
