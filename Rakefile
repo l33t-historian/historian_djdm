@@ -1,6 +1,9 @@
 require 'rubygems'
+require 'rubygems/tasks'
 require 'bundler/setup'
 require 'rake'
+
+Gem::Tasks.new
 
 require 'spec/rake/spectask'
 Spec::Rake::SpecTask.new(:spec) do |spec|
@@ -15,13 +18,3 @@ Spec::Rake::SpecTask.new(:rcov) do |spec|
 end
 
 task :default => :spec
-
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "delayed_job_delayed_job #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end

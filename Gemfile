@@ -1,12 +1,10 @@
-source 'http://rubygems.org'
-gem 'delayed_job', :git => 'git://github.com/collectiveidea/delayed_job.git'
-gem 'dm-core'
-gem 'dm-observer'
-gem 'dm-aggregates'
+source 'https://rubygems.org'
+gemspec
+DM_VERSION    = '~> 1.2.0'
 
 group :development do
-  gem 'rspec'
   gem 'rake'
-  gem 'dm-migrations'
-  gem 'dm-sqlite-adapter'
+  gem 'rubygems-tasks', '~> 0.2'
+  gem 'dm-migrations',      DM_VERSION
+  gem 'dm-sqlite-adapter',  DM_VERSION
 end
